@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Cart from './Components/Cart/Cart';
+import Desserts from './Components/DessertsComponent/Desserts';
+import AllCategories from './Components/Filter/AllCategories';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='block'>
+      <Desserts/>
+     </div>
+     <div className='block'>
+      <img className='cake' src='https://img.icons8.com/external-linector-lineal-linector/512/external-cake-romantic-love-linector-lineal-linector.png' alt='cake'/>
+     <h1>Dazzling Desserts</h1>
+      <AllCategories/>
+      <Cart/>
+     </div>
     </div>
   );
 }
